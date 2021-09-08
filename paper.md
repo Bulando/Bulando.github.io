@@ -8,7 +8,7 @@
 
 同义词预测已经成为以实体为中心的文本挖掘和解释的一项重要任务[28,32]。借助同义词预测，可以将实体的非正式提及规范化为标准形式，这将大大减少终端用户和下游应用程序之间的通信差距。这些例子包括但不限于问答匹配[9]，信息检索[39]，医学诊断[20]。
 
-![hierarchical model](G:\Bulando\Bulando.github.io\imagesP\hierarchical model.jpg)
+![hierarchical model](imagesP\hierarchical model.jpg)
 
 图1:提出的分层多任务词嵌入模型综述。术语的语义型知识和术语同义知识在不同的层次上以不同的方式被利用。
 
@@ -52,11 +52,11 @@
 
 skip-gram模型[23]的目标是优化能有效预测给定目标词的邻近词的词嵌入。更正式地说，它使以下目标函数最小化
 
-![skip-gram](G:\Bulando\Bulando.github.io\imagesP\skip-gram.jpg)
+![skip-gram](imagesP\skip-gram.jpg)
 
 其中xt是目标单词，c是上下文窗口大小。利用softmax函数计算概率p(xO |xi)
 
-![skip-gram1](G:\Bulando\Bulando.github.io\imagesP\skip-gram1.jpg)
+![skip-gram1](imagesP\skip-gram1.jpg)
 
 skip-gram模型交替更新V和W，输出隐藏的表示V作为最终的单词嵌入，其中Vi的第i行为单词xi s的嵌入向量。
 
@@ -78,7 +78,7 @@ skip-gram模型交替更新V和W，输出隐藏的表示V作为最终的单词�
 
 我们将任务T1转换为一个多标签分类问题，其中标签的数量等于语义类型的数量。虽然有很多复杂的多标签分类算法[38,40]，但我们使用的是二进制相关[27]，即为每个标签独立训练一个二进制分类器。选择二值关联的原因是，当损失函数为宏观平均测度[19]时，二值关联不仅计算有效，而且可以归纳出最优模型。特别地，我们最小化下面的正则化加权交叉熵目标。
 
-![1631087918](G:\Bulando\Bulando.github.io\imagesP\1631087918.jpg)
+![1631087918](imagesP\1631087918.jpg)
 
 
 
@@ -86,7 +86,7 @@ skip-gram模型交替更新V和W，输出隐藏的表示V作为最终的单词�
 
 
 
-![model2](G:\Bulando\Bulando.github.io\imagesP\model2.jpg)
+![model2](imagesP\model2.jpg)
 
 图2 分层多任务词嵌入模型体系结构。注意，这两个任务都可以访问嵌入层。任务T1将使用语义类型信息，而任务T2将使用现有的同义词关系知识。右侧显示了如何将数据输入模型的示例。在这里Runny_nose是目标单词，上下文窗口大小为7。
 
