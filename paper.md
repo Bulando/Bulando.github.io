@@ -1,3 +1,5 @@
+## Hierarchical Multi-Task Word Embedding Learning for Synonym Prediction论文翻译
+
 ## 同义词预测的分层多任务词嵌入学习
 
 ### 摘要
