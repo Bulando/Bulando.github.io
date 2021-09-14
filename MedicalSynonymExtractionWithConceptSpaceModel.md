@@ -28,7 +28,7 @@
 
 <h3>2 相关工作</h3>
 
-广泛的技术被应用到同义词检测,包括使用lexicosyntactic模式(赫斯特,1992),聚类(布朗et al ., 1992),基于模型(他们et al ., 2004) (Nakayama et al ., 2007) (Wang和赫斯特,2009)(伦,2008)和分布语义[杜和蓝道,1997][Henriksson et al .,2014][Henriksson et al.， 2013a][Henriksson et al.， 2013b][Zeng et al.， arXiv:1506.00528v1 [cs。CL] 2015年6月1日2012]。也有人努力使用多源或集成方法来提高检测性能[Curran, 2002][Wu and Zhou, 2003][Peirsman and Geeraerts, 2009]。
+广泛的技术被应用到同义词检测,包括使用lexico syntactic模式(赫斯特,1992),聚类(布朗et al ., 1992),基于模型(他们et al ., 2004) (Nakayama et al ., 2007) (Wang和赫斯特,2009)(伦,2008)和分布语义[杜和蓝道,1997][Henriksson et al .,2014][Henriksson et al.， 2013a][Henriksson et al.， 2013b][Zeng et al.， arXiv:1506.00528v1 [cs。CL] 2015年6月1日2012]。也有人努力使用多源或集成方法来提高检测性能[Curran, 2002][Wu and Zhou, 2003][Peirsman and Geeraerts, 2009]。
 
 向量空间模型与同义词抽取直接相关。一些方法利用低秩近似思想对获取语料库统计信息的大矩阵进行分解。这类方法中最具代表性的是潜在语义分析(Latent Semantic Analysis, LSA) [Deerwester et al.， 1990]。一些新的模型也遵循这种方法，如Hellinger PCA [Lebret and Collobert, 2014]和GloVe [Pennington et al.， 2014]。
 
